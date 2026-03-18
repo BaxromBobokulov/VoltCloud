@@ -25,7 +25,7 @@ async create(payload: any, userId: string) {
     });
 
     return {
-      shortUrl: `http://159.223.25.117:2020/file-upload/${savedResource.shortCode}`
+      shortUrl: `http://159.223.25.117:3000/file-upload/${savedResource.shortCode}`
     };
 }
 
@@ -61,7 +61,7 @@ async create(payload: any, userId: string) {
     }
 
     return {
-      link: `http://159.223.25.117:2020/file-upload/${shortCode}`,
+      link: `http://159.223.25.117:3000/file-upload/${shortCode}`,
       count: resource.clicks
     }
   }

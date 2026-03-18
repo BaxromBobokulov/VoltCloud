@@ -45,7 +45,7 @@ export class BotUpdate {
         let responseMessage = "📁 **Sizning yuklangan fayllaringiz:**\n\n"
 
         files.forEach((file, index) => {
-            responseMessage += `🔗 Link: http://localhost:2020/file-upload/${file.shortlink}\n`;
+            responseMessage += `🔗 Link: http://159.223.25.117:3000/file-upload/${file.shortlink}\n`;
             responseMessage += `👁 Ko'rishlar: ${file.clicks}\n`;
             responseMessage += `------------------------\n`;
         });
