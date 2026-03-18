@@ -110,9 +110,9 @@ async postPhoto(ctx: Context) {
 
     try {
         const result = await this.fileservice.uploadFromUrl(fullUrl);
-        const end = await this.fileservice.create(result, userId); // Faqat userId uzatamiz
+        const end = await this.fileservice.create(result, userId);
 
-        await ctx.telegram.deleteMessage(ctx.chat!.id, statusMsg.message_id); // "Yuklanmoqda"ni o'chirib tashlaymiz
+        await ctx.telegram.deleteMessage(ctx.chat!.id, statusMsg.message_id);
         
         await ctx.reply(`✅ Saqlandi!\n\n🔗 Link: <code>${end.shortUrl}</code>`, { parse_mode: 'HTML' });
     } catch (e) {
