@@ -25,7 +25,7 @@ async create(payload: any, userId: string) {
     });
 
     return {
-      shortUrl: `http://localhost:2020/file-upload/${savedResource.shortCode}`
+      shortUrl: `http://159.223.25.117:2020/file-upload/${savedResource.shortCode}`
     };
 }
 
